@@ -9,3 +9,5 @@ Instalação (uma vez):
     gh repo create tick-ping --public --source . --push
     gh secret set TICK_URL --body "https://agente-vendedor-havana.vercel.app/cron/tick"
     gh secret set CRON_SECRET   # cole o valor de CRON_SECRET do .env
+
+Atualizado em 2026-11-15: secrets TICK_URL e CRON_SECRET configurados.
