@@ -11,4 +11,5 @@ jobs:
         env:
           TICK_URL: ${{ secrets.TICK_URL }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
-        run: curl -fsS --retry 3 --max-time 60 -H "Authorization: Bearer $CRON_SECRET" "$TICK_URL"
+        run: |
+          curl -fsS --retry 3 --max-time 60 -H "Authorization: Bearer $CRON_SECRET" "$TICK_URL"
